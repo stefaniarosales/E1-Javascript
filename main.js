@@ -32,13 +32,14 @@ console.log("--------------------------------");
 /* 3.Crear una función que reciba un número por parámetro e indique en consola si ese número es múltiplo de 5. */
 
 function esMultiploDe5(numero) {
-  for (let i = 1; i <= numero; i++) {
-    if (i % 5 === 0) {
-      console.log(`El numero ${i} es multiplo de 5`);
+    if (numero % 5 === 0) {
+      console.log(`El numero ${numero} es multiplo de 5`);
+    }else {
+      console.log(`El numero ${numero} no es multiplo de 5`);
     }
   }
-}
 esMultiploDe5(30);
+esMultiploDe5(12);
 console.log("--------------------------------");
 
 /* 4- Crear una función que reciba un número por parámetro e imprima por consola todos los números desde el 0 hasta llegar a ese número. */
@@ -92,7 +93,8 @@ console.log("--------------------------------");
 function NumMultiplicado(array, numero) {
   for (let i = 0; i < array.length; i++) {
     const valorMultiplicado = array[i] * numero;
-    console.log(valorMultiplicado)
+    console.log(`Valor a multiplicar ${array[i]} x ${numero} = ${valorMultiplicado}`)
+
   }
 }
 
